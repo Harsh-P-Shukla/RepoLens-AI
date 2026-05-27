@@ -1,0 +1,12 @@
+node_modules/
+dist/
+
+backend/node_modules/
+frontend/node_modules/
+frontend/dist/
+
+.env
+.env.local
+*.log
+backend/storage/
+backend/.tmp-lancedb-test/

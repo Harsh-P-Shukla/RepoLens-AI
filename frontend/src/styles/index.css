@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    background: #07090d;
+    font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+    letter-spacing: 0;
+  }
+
+  button,
+  input {
+    font: inherit;
+  }
+
+  button {
+    border-radius: 8px;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.03)),
+      rgba(13, 17, 23, 0.78);
+    box-shadow: 0 22px 80px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(18px);
+  }
+
+  .command-bar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    background:
+      linear-gradient(90deg, rgba(103, 232, 249, 0.1), rgba(110, 231, 183, 0.045), rgba(251, 191, 36, 0.08)),
+      rgba(10, 13, 18, 0.82);
+    box-shadow: 0 0 0 1px rgba(103, 232, 249, 0.05), 0 20px 60px rgba(0, 0, 0, 0.34);
+    backdrop-filter: blur(20px);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.react-flow__controls {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: none;
+}
+
+.react-flow__controls-button {
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(13, 17, 23, 0.92);
+  color: #ffffff;
+}
+
+.react-flow__controls-button:hover {
+  background: rgba(103, 232, 249, 0.18);
+}
+
+.react-flow__minimap {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: rgba(13, 17, 23, 0.88);
+}
+
+.markdown-body p {
+  margin: 0.55rem 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  margin: 0.65rem 0;
+  padding-left: 1.2rem;
+}
+
+.markdown-body li {
+  margin: 0.25rem 0;
+}
+
+.markdown-body a {
+  color: #67e8f9;
+}
+
+.markdown-body strong {
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(103, 232, 249, 0.26);
+  border: 2px solid rgba(7, 9, 13, 0.85);
+  border-radius: 999px;
+}
