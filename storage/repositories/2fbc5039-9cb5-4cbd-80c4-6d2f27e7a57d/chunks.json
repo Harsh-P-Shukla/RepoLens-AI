@@ -1,0 +1,22 @@
+[
+  {
+    "id": "8d5dc3c8-1d58-5fa7-894c-b4ef1ea31d55",
+    "filePath": "README",
+    "content": "Hello World!\r\n",
+    "language": "markdown",
+    "imports": [],
+    "symbols": [],
+    "startLine": 1,
+    "endLine": 2,
+    "chunkType": "module",
+    "tokenCount": 3,
+    "metadata": {
+      "extension": "",
+      "sizeBytes": 14
+    },
+    "summary": "module chunk in README lines 1-2.",
+    "embeddingText": "File: README\nLanguage: markdown\nType: module\nSummary: module chunk in README lines 1-2.\nSymbols: \nImports: \nHello World!\r\n",
+    "excerpt": "Hello World!\n",
+    "repoId": "2fbc5039-9cb5-4cbd-80c4-6d2f27e7a57d"
+  }
+]

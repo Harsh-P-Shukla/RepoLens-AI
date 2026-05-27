@@ -16,7 +16,7 @@ function numberFromEnv(value, fallback) {
 
 export const env = {
   PORT: numberFromEnv(process.env.PORT, 5000),
-  CORS_ORIGIN: process.env.CORS_ORIGIN || 'http://localhost:5173',
+  FRONTEND_URL: process.env.FRONTEND_URL || 'https://repo-lens-ai-five.vercel.app',
   TEMP_DIR: process.env.REPOLENS_TEMP_DIR || path.join(os.tmpdir(), 'repolens-ai'),
   STORAGE_DIR: process.env.REPOLENS_STORAGE_DIR || path.resolve(process.cwd(), 'storage'),
   AI_PROVIDER: (process.env.AI_PROVIDER || 'none').toLowerCase(),

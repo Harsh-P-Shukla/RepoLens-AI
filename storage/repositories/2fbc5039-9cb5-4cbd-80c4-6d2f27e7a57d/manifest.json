@@ -1,0 +1,79 @@
+{
+  "repoId": "2fbc5039-9cb5-4cbd-80c4-6d2f27e7a57d",
+  "createdAt": "2026-05-27T16:47:15.061Z",
+  "updatedAt": "2026-05-27T16:47:15.194Z",
+  "status": "ready",
+  "analysis": {
+    "repoId": "2fbc5039-9cb5-4cbd-80c4-6d2f27e7a57d",
+    "projectName": "Hello-World",
+    "repository": {
+      "owner": "octocat",
+      "name": "Hello-World",
+      "url": "https://github.com/octocat/Hello-World",
+      "clonedAt": "2026-05-27T16:47:15.058Z"
+    },
+    "techStack": [],
+    "summary": "Hello-World looks like a general software repository using a lightweight set of source files. It follows a modular repository architecture, with 1 analyzed files and 0 notable module areas. No obvious single entrypoint was detected, so the repository may be library-style or split across modules. For a beginner, read the entrypoint first, then follow imports through the dependency graph to see how features connect.",
+    "architecture": {
+      "projectName": "Hello-World",
+      "projectType": "General software repository",
+      "architectureStyle": "Modular repository architecture",
+      "entrypoints": [],
+      "modules": [],
+      "conventions": [
+        "Lightweight folder organization"
+      ],
+      "graphHealth": {
+        "nodeCount": 0,
+        "edgeCount": 0,
+        "parser": "regex-fallback"
+      },
+      "dataFlow": [
+        "Source files",
+        "Application modules",
+        "Runtime entrypoint"
+      ]
+    },
+    "folderTree": {
+      "name": ".",
+      "path": ".",
+      "type": "directory",
+      "children": [
+        {
+          "name": "README",
+          "path": "README",
+          "type": "file",
+          "extension": "",
+          "sizeBytes": 14
+        }
+      ]
+    },
+    "dependencyGraph": {
+      "parser": "regex-fallback",
+      "nodes": [],
+      "edges": []
+    },
+    "stats": {
+      "totalFiles": 1,
+      "totalDirectories": 1,
+      "skippedFiles": 0,
+      "totalSizeBytes": 14,
+      "fileTypes": {
+        "[none]": 1
+      },
+      "importantFiles": []
+    }
+  },
+  "memory": {
+    "status": "ready",
+    "indexedFiles": 1,
+    "chunkCount": 1,
+    "languages": [
+      "markdown"
+    ],
+    "embeddingProvider": "local",
+    "vectorDatabase": "lancedb",
+    "message": "Repository memory is ready.",
+    "architectureType": "Modular repository architecture"
+  }
+}
