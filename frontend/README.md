@@ -21,7 +21,7 @@ cp .env.example .env
 npm run dev
 ```
 
-The app expects the backend at `http://localhost:5000` unless `VITE_API_URL` is changed.
+Set `VITE_API_BASE_URL` in `.env` to point at your backend. The sample value targets the deployed Render API, while the fallback in code still supports local development at `http://localhost:5000`.
 
 ## Screens
 

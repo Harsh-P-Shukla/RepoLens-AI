@@ -1,9 +1,11 @@
 import axios from 'axios';
 
-export const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
+console.log("API_BASE_URL:", API_BASE_URL);
 
 const api = axios.create({
-  baseURL: API_URL,
+  baseURL: API_BASE_URL,
   timeout: 120000
 });
 
@@ -43,7 +45,7 @@ export async function getRepoWalkthrough(repoId, level = 'beginner') {
 }
 
 export async function streamRepositoryChat({ repoId, question, onMeta, onToken, onDone, onError, signal }) {
-  const response = await fetch(`${API_URL}/repo/chat/stream`, {
+  const response = await fetch(`${API_BASE_URL}/repo/chat/stream`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
